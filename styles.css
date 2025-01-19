@@ -9,6 +9,7 @@ nav {
     align-items: end;
     justify-content: space-between;
     margin-right: 30px;
+    margin-top: 10px;
 }
 
 nav img {
@@ -17,11 +18,27 @@ nav img {
     margin-left: 30px;
 }
 
+.logo {
+    margin-left: 30px;
+}
+
+nav .links {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    padding-bottom: 10px;
+}
+
 nav a {
     text-decoration: none;
-    margin-right: 70px;
+    /* margin-right: 70px; */
     color: rgb(0, 171, 0);
     font-weight: bold;
+    font-size: 20px;
+}
+
+nav a:hover{
+    text-decoration: underline;
 }
 
 main {
@@ -61,6 +78,7 @@ main .texte {
 .texte h1 {
     font-size: 70px;
     margin-bottom: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 section.texte p:last-of-type {
@@ -80,6 +98,8 @@ section.texte h2 a {
     text-decoration: none;
     color: white;
 }
+
+/* ===== aside =================== */
 
 aside {
     display: flex;
@@ -111,6 +131,8 @@ hr {
     margin-right: 100px;
 }
 
+/* ============ Menue ========================= */
+
 .menu {
     padding-top: 30px;
     text-align: center;
@@ -123,12 +145,21 @@ hr {
 }
 
 .menu h2 {
-    text-align: center;
+    /* text-align: center;
     background-color: green;
     color: white;
     padding: 10px;
     border-radius: 5px;
-    margin: 2% 43%;
+    margin: 2% 43%; */
+    background-color: green;
+    border-radius: 15px;
+    padding: 10px;
+    width: 200px;
+}
+
+.menu div {
+    display: flex;
+    justify-content: center;
 }
 
 .menu h1 {
@@ -149,6 +180,7 @@ hr {
 .foodsimage img {
     width: 100%;
     height: 100%;
+    border-radius: 10px;
 }
 
 .foodsimage .img1 {
@@ -173,34 +205,7 @@ hr {
     grid-area: img7; /*kika*/
 }
 
-/* .foodsimage img { 
-    width: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 20px;
-}
-
-.foodsimage {
-    column-count: 3;
-    padding-left: 90px;
-    padding-right: 90px;
-}
-
-.foodsimage .img2 {
-    height: 535px;
-}
-
-.foodsimage .img4 {
-    height: 535px;
-}
-
-.foodsimage .img6 {
-    height: 265px;
-}
-
-.foodsimage .img7 {
-    height: 265px;
-} */
+/* ====== footer ============ */
 
 footer {
     background-color: rgb(255, 224, 195);
@@ -234,8 +239,6 @@ footer p  {
     border: none;
 }
 
-
-
 .join img {
     height: 30px;
     width: 30px;
@@ -253,8 +256,13 @@ footer p  {
         width: 100%;
     }
 
+    nav .links {
+        justify-content: space-around;
+        width: 100%;
+    }
+
     nav img {
-        width: 240px;
+        width: 350px;
         height: 150px;
         margin-left: 0px;
     }
@@ -265,7 +273,7 @@ footer p  {
     }
 
     .links a {
-        font-size: 130%;
+        font-size: 30px;
         margin: 0px;
         padding: 0px;
     }
@@ -273,33 +281,159 @@ footer p  {
     .links {
         display: flex;
         justify-content: space-around;
-        margin: 30px 0px;
+        margin: 60px 0px;
     }
 
-    /* ========= partie main ========== */
+    /* ===== Main ============ */
 
     main {
-        display: grid;
-        width: 100%;
-    }
-    
-    #Home .image {
-        margin: 0px;
-        padding: 0px;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
     }
 
-    #Home .image img {
-        width: 200px;
+    .texte p {
+        padding-left: 200px;
+    }
+
+    main .texte {
+        margin: 0px;
+        margin-bottom: 70px;
+        padding: 0px;
+    }
+
+    main .texte .off {
+        padding: 20px;
+        font-size: 40px;
+    }
+
+    main .texte h1 {
+        font-size: 100px;
+    }
+
+    section.texte p:last-of-type {
+        padding: 0px 100px;
+        font-size: 50px;
+    }
+
+    .texte h2 {
+        font-size: 50px;
+        border-radius: 5px;
+    }
+
+    main .image img {
+        display: none;
+    }
+    main .image {
+        display: none;
+    }
+
+    /* ======== aside =========== */
+    
+    aside {
+        margin: 0px;
+        flex-wrap: wrap;
+    }
+        
+    aside section img {
+        width: 100px;
+        height: 100px;
+    }
+
+    aside section h3 {
+        font-size: 30px;
+    }
+
+    aside section p {
+        font-size: 20px;
+    }
+
+    aside section {
+
         height: 200px;
     }
 
-    /* ======== footer =========== */
-
-    footer {
-        width: 100%;
-        overflow: hidden;
+    aside {
+        margin-bottom: 50px;
     }
 
+    /* ======= Menue ============ */
+
+    .menu h2 {
+        font-size: 40px;
+        margin: 30px 250px 30px 250px;
+    }
+
+    .menu h1 {
+        font-size: 40px;
+    }
+
+    .menu .foodsimage {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .menu .foodsimage img {
+        max-width: 100%;
+        max-height: 800px;
+        border-radius: 15px;
+    }
+
+    /* ======== footer =================== */
+    footer {
+        display: flex;
+        flex-direction:column;
+        padding-top: 20px;
+        padding-bottom: 0px;
+    }
+
+    footer section {
+        position: relative;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    footer .footerlogo img {
+        width: 300px;
+        height: 150px;
+    }
+
+    footer section h2 {
+        font-size: 30px;
+    } 
+
+    footer section p {
+        font-size: 20px;
+    }
+
+    footer input {
+        width: 70%;
+        height: 35px;
+    }
+}
+
+@media (max-width: 780px) {
+    aside {
+        display: flex;
+    }
+
+    aside section {
+        width: 300px;
+    }
+}
+
+@media (max-width: 430px) {
+    nav .logo img {
+        width: 200px;
+        height: 100px;
+    }
+
+    nav .links {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    } 
+    
 }
